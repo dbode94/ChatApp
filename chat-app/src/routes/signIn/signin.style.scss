@@ -5,13 +5,13 @@
     height: 200px;
     position: absolute;
     top:40%;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px rgba(255, 255, 255,0.3);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
     background: linear-gradient(45deg, #e66465, #9198e5);
 
     .vertical-line{
         height: 180px;
-        border-left: 2px solid gray;
+        border-left: 1px solid black;
         margin: 0px;
          position: absolute;
         top: 10px;
@@ -31,10 +31,14 @@
 }
 
 input{
-    border: 0px;
+    border: 1px solid whitesmoke;
     border-radius: 3px;
     width: 150px;
     background-color: whitesmoke;
+
+    &:focus{
+       outline:none;
+    }
 }
 
 button{
