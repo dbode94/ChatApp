@@ -1,11 +1,10 @@
-
-import SignIn from './routes/signIn/signIn.component';
+import Authentication from './routes/authentication/authentication.component';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <SignIn className='signIn-component'/>
+      <Authentication className='signIn-component'/>
     </div>
   );
 }

@@ -1,0 +1,31 @@
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;       
+    gap: 10px;    
+
+    & .nameInput-container{
+        display: flex;
+        gap: 10px;
+    }
+}
+
+input{
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    width: auto;
+    background-color: whitesmoke;
+    &:focus{
+       outline:none;
+    }
+}
+
+.logIn-button{
+    margin-top: 10px;
+}
+
+
+.h3-title{
+    text-align: center;
+    border-bottom: 1px solid gray;
+}

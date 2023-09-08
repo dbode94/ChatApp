@@ -1,0 +1,10 @@
+.form-button{
+    border-radius: 10px;
+    border: 1px solid white;
+    height: 30px;
+    background: linear-gradient(45deg, #e66465, #9198e5);
+
+    &:hover{
+        background: #9198e5;
+    }
+}
