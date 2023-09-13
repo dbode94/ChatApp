@@ -20,17 +20,18 @@ const Authentication = () =>{
         setRegister(!isRegister)
     }
 
+    //analyze
     const handleSubmit = (e) =>{
         e.preventDefault();
         const info = {}
         for (let index = 0; index < e.target.length - 1; index++) {      
             const {name,value} = e.target[index];
-            console.log(name,value);
             info[name] = value;
         }
         setFormFields({...formFields, ...info});
     }
 
+    //using it just for testing, setFormField takes a bit to modify the state
     useEffect(()=>{ console.log(formFields)},[formFields]);
     
     return(

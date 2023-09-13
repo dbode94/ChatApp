@@ -1,0 +1,29 @@
+.image-container{
+    // border: 1px solid black;
+    border-radius: 100px;
+    width: 40px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;      
+}
+
+.name-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: whitesmoke;
+}
+
+.contact-container{
+    display: flex;
+    gap: 5px;
+    border-radius: 5px;
+    height: 40px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: rgba($color: gray, $alpha: 0.2);
+    }
+}
