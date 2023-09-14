@@ -43,7 +43,7 @@ const ContactConsole = ({className}) =>{
     const [isSearchable, setSearchable] = useState(false);
 
     const searchHandler = (event) =>{
-        setContacts(contacts.filter((contact) => contact.firstName.includes(event.target.value)));
+        setContacts(contacts.filter((contact) => (contact.firstName + contact.lastName).toLowerCase().includes(event.target.value)));
     }
 
     //Displays recents chats or (contacts + search input)
@@ -53,7 +53,7 @@ const ContactConsole = ({className}) =>{
             const chats = document.getElementById('chats');
             chats.className = chats.className.replace(/focus/g, '');
             event.target.className += ' focus';
-            setContacts(contacts)
+            setContacts(contacts) //I don't like this
         }
     }
 
@@ -83,6 +83,7 @@ const ContactConsole = ({className}) =>{
         </div>
     );
 
-}
+}        
+
 
 export default ContactConsole;
